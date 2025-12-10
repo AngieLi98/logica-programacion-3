@@ -7,6 +7,11 @@ while(isNaN(numero)) {
     numero = Number(prompt("Ingrese un numero entero postivo: "));
 }
 
+while(numero < 0) {
+    console.log("Error: debe ingresar un número positivo");
+    numero = Number(prompt("Ingrese un numero entero postivo: "));
+}
+
 function factorialNumero() {
     if(numero == 0 || numero == 1) {
         console.log(`Factorial de ${numero}! = 1`);
